@@ -52,3 +52,19 @@ models:
         description: Location used to group job postings.
       - name: postings
         description: Number of job posting rows for the location.
+  
+  - name: monthly_summary
+    description: Monthly posting totals and remote-work share for months with remote postings.
+    config:
+      persist_docs:
+        relation: true
+        columns: true
+    columns:
+      - name: month
+        description: Month of the search, truncated to the start of the month.
+      - name: total_postings
+        description: Total number of job posting rows for the month across all roles.
+      - name: remote_postings
+        description: Number of job posting rows that allow working from home for the month.
+      - name: pct_remote
+        description: Percentage of postings allowing work from home, rounded to one decimal place.
