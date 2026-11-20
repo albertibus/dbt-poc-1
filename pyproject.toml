@@ -1,0 +1,19 @@
+[project]
+name = "poc-1"
+version = "0.1.0"
+description = "dbt proof of concept"
+readme = "README.md"
+authors = [
+    { email = "alberto.pilladogarcia@plainconcepts.com" }
+]
+requires-python = ">=3.14"
+dependencies = [
+    "dbt>=2.0.12",
+]
+
+[project.scripts]
+poc-1 = "poc_1:main"
+
+[build-system]
+requires = ["uv_build>=0.13.7,<0.14.0"]
+build-backend = "uv_build"
