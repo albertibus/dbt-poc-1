@@ -9,9 +9,13 @@ wheels/
 # Virtual environments
 .venv
 
+# VSCode
 .vscode
 
 # Data files
 data/
 *.duckdb
 logs/
+
+# dbt generated files
+.user.yml
